@@ -77,6 +77,23 @@ $(document).ready(function () {
         
     });
     
+    /* Maps */
+    var map = new GMaps({
+        div: '.map',
+        lat: 37.79,
+        lng: -122.35,  
+        zoom: 13
+    });
+    
+    map.addMarker({
+        lat: 37.7846334,
+        lng: -122.3996024,
+        title: 'SF',
+        infoWindow: {
+            content: '<p>Our SF HQ</p>'
+        }
+    });
+    
     
     
     
